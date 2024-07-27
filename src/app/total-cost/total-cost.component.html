@@ -1,0 +1,11 @@
+<div>
+  <app-destination
+    (destinationSelected)="onDestinationSelected($event)"
+  ></app-destination>
+  <app-accommodation
+    (accommodationSelected)="onAccommodationSelected($event)"
+  ></app-accommodation>
+  <div *ngIf="totalCost !== undefined">
+    <h2>Total Cost: ${{ totalCost }}</h2>
+  </div>
+</div>
